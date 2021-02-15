@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">TTS</string>
+    <string name="your_text">Your text…</string>
+    <string name="speech">Speech!</string>
+    <string name="about">About</string>
+    <string name="close">Close</string>
+    <string-array name="rate">
+        <item>Very low</item>
+        <item>Low</item>
+        <item>Normal</item>
+        <item>High</item>
+        <item>Very High</item>
+    </string-array>
+    <string-array name="dialect">
+        <item>English</item>
+        <item>American</item>
+        <item>British</item>
+        <item>Canadian</item>
+        <item>French</item>
+        <item>Canada French</item>
+
+    </string-array>
+</resources>

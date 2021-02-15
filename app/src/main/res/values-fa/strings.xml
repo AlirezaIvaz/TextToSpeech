@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">متن به گفتار</string>
+    <string name="your_text">متن شما…</string>
+    <string name="speech">بگو!</string>
+    <string name="about">دربارهٔ ما</string>
+    <string name="close">بستن</string>
+    <string-array name="rate">
+        <item>بسیار کند</item>
+        <item>کند</item>
+        <item>عادی</item>
+        <item>تند</item>
+        <item>بسیار تند</item>
+    </string-array>
+    <string-array name="dialect">
+        <item>انگلیسی</item>
+        <item>آمریکایی</item>
+        <item>بریتانیایی</item>
+        <item>کانادایی</item>
+        <item>فرانسوی</item>
+        <item>فرانسوی کانادا</item>
+    </string-array>
+</resources>
