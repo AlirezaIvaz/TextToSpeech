@@ -4,6 +4,7 @@
     <string name="speech">Speech!</string>
     <string name="about">About</string>
     <string name="close">Close</string>
+    <string name="nothing">Nothing to speech!</string>
     <string-array name="rate">
         <item>Very low</item>
         <item>Low</item>

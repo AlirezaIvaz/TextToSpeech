@@ -60,7 +60,11 @@ class MainActivity : AppCompatActivity() {
             if (status != TextToSpeech.ERROR) {
                 tts!!.language = Locale.ENGLISH
                 btn?.setOnClickListener {
-                    val toSpeak = edt1?.text.toString()
+                    var toSpeak = edt1?.text.toString()
+                    if (toSpeak.isEmpty()) {
+                        toSpeak = "Nothing to speech!"
+                        Toast.makeText(this@MainActivity, R.string.nothing, Toast.LENGTH_SHORT).show()
+                    }
                     when (spinner1?.selectedItemPosition) {
                         0 -> tts!!.setSpeechRate(0.1.toFloat())
                         1 -> tts!!.setSpeechRate(0.5.toFloat())
@@ -76,15 +80,10 @@ class MainActivity : AppCompatActivity() {
                         4 -> tts!!.language = Locale.FRENCH
                         5 -> tts!!.language = Locale.CANADA_FRENCH
                     }
-                    if (edt1?.text.toString().isEmpty()) {
-                        Toast.makeText(this@MainActivity, "Nothing to speak!", Toast.LENGTH_SHORT)
-                            .show()
+                    if (Build.VERSION.SDK_INT >= 21) {
+                        tts!!.speak(toSpeak, TextToSpeech.QUEUE_FLUSH, null, null)
                     } else {
-                        if (Build.VERSION.SDK_INT >= 21) {
-                            tts!!.speak(toSpeak, TextToSpeech.QUEUE_FLUSH, null, null)
-                        } else {
-                            tts!!.speak(toSpeak, TextToSpeech.QUEUE_FLUSH, null)
-                        }
+                        tts!!.speak(toSpeak, TextToSpeech.QUEUE_FLUSH, null)
                     }
                 }
             }

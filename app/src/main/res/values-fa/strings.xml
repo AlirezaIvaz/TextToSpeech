@@ -5,6 +5,7 @@
     <string name="speech">بگو!</string>
     <string name="about">دربارهٔ ما</string>
     <string name="close">بستن</string>
+    <string name="nothing">چیزی برای گفتن نیست!</string>
     <string-array name="rate">
         <item>بسیار کند</item>
         <item>کند</item>
